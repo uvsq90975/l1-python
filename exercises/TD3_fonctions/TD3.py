@@ -132,7 +132,6 @@ def afficheDate(date):
 temps = secondeEnTemps(1000000000)
 afficheTemps(temps)
 afficheDate(tempsEnDate(1970, temps))
-#afficheDate()
 print()
 
 import time
@@ -165,6 +164,8 @@ def bisextile(ref, jour):
 bisextile(2020, 200000)
 print()
 
+
+
 def nombreBisextile(ref, jour):
     a = jour // (365)
     bis = 0
@@ -172,6 +173,7 @@ def nombreBisextile(ref, jour):
       if i % 4 == 0 and (i % 100 != 0 or i % 400 == 0) :
         bis = bis + 1
     return bis
+
 
 def tempsEnDateBisextile(ref, temps):
     seconde = tempsEnSeconde(temps)
