@@ -10,14 +10,14 @@ def syracuse(n):
         l.append(n)
     return l
 
-
-#print(syracuse(3))
+help(syracuse)
+# print(syracuse(3))
 
 
 def testeConjecture(n_max):
     """ Teste la conjecture de Collatz pour toutes les valeurs de 2 à n_max """
     test = True
-    for n in range(2,n_max+1):
+    for n in range(2, n_max+1):
         l = syracuse(n)
         print(l)
         
@@ -31,12 +31,10 @@ def testeConjecture(n_max):
     return test
 
 
-
 print(testeConjecture(10))
 
 
-
-    def tempsVol(n):
+def tempsVol(n):
     """ Retourne le temps de vol de n """
     l = []
     l.append(n)
@@ -69,8 +67,9 @@ def tempsVolListe(n_max):
         l.append(tempsVol2(n))
     return l
 
+
 l = tempsVolListe(10000)
-#print(l)
+# print(l)
 
 maxi = max(l)
 print("Temsp de vol maxi :", maxi)
@@ -93,12 +92,9 @@ def altMaxListe(n_max):
 
 n = 10000
 l = altMaxListe(n)
-#print(l)
+# print(l)
 
 maxi = max(l)
 print("Altitude maxi :", maxi)
 val = l.index(maxi) + 1
 print("Valeur :", val)
-
-
-
