@@ -43,6 +43,7 @@ def aff_carre():
     global objet
     objet.append(carre)
 
+
 def aff_croix():
     #global coul
     coul = "yellow"
